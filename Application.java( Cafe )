@@ -1,0 +1,50 @@
+package cafe;
+
+public class Application {
+
+    public static void main(String[] ags){
+
+        Customer customer = new Customer();
+        Workers workers = new Workers();
+
+        customer.setName("Natali");
+        customer.num_of_cups = 2;
+
+        Customer customer2 = new Customer();
+        customer.setName("Pavlo");
+        customer.num_of_cups = 10;
+
+        Customer customer3 = new Customer();
+        customer.setName("Gosha");
+        customer.num_of_cups = 5;
+
+
+
+        Coffee coffee = new Coffee("Americano", "arabica",  "s");
+        Coffee coffee2 = new Coffee("Latte",    "canephora","l");
+        Coffee coffee3 = new Coffee("Espresso", "canephora","s");
+        Coffee coffee4 = new Coffee("Irish",    "arbica",   "m");
+        Coffee coffee5 = new Coffee("Fredo",    "liberica", "m");
+
+        System.out.println(coffee);
+        System.out.println(coffee2);
+        System.out.println(coffee3);
+        System.out.println(coffee4);
+        System.out.println(coffee5);
+        System.out.println(customer);
+        System.out.println(customer2);
+        System.out.println(customer3);
+
+       workers.Hi();
+       customer.Hi();
+
+        coffee.thanks(customer);
+
+        coffee.thanks(workers);
+
+        customer.mood();
+
+
+
+    }
+}
