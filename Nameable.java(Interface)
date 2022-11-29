@@ -1,0 +1,11 @@
+package cafe;
+
+public interface Nameable {
+
+    String name();
+
+
+
+
+
+}
